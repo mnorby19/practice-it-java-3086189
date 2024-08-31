@@ -20,19 +20,21 @@ public class Employee {
     if(isAManager == true){
      System.out.println("The person is a manager.");
      System.out.println("True");
+     System.out.println(isAManager);
     }
     else{
       System.out.println("The person is not a manager.");
       System.out.println("False");
+      System.out.println(isAManager);
     }
 
     // Create a variable called yearsOfService of type double and assign it the
     // value 2.5.
 
     // Print the yearsOfService variable to the console.
-    Double yearsOfService = 2.5;
-    System.out.print("Years of service: " + yearsOfService);
-    System.out.print(yearsOfService);
+    double yearsOfService = 2.5;
+    System.out.println("Years of service: " + yearsOfService);
+    System.out.println(yearsOfService);
 
 
     // Create a variable called baseSalary of type int and assign it the value 3000.
