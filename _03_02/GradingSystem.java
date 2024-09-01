@@ -8,7 +8,10 @@ public class GradingSystem {
       return true;
     }
     // Otherwise return false.
-    return false;
+    else {
+      return false;
+    }
+  
   }
 
   public char getGrade(int percentage) {
@@ -32,17 +35,19 @@ public class GradingSystem {
       return 'F';
     }
     // If it's less than 60, return 'F'.
-    return 'X';
+    else {
+      return 'X';
+    }
   }
 
   public String retakeMessage(int percentage, boolean allowedToRetake) {
     // If percentage is less than 60 and allowedToRetake is true, return a String
-    if (percentage < 60 && allowedToRetake == true){
+    if (percentage < 60 && allowedToRetake){
       return "The student has been entered for a retake.";
     }
     // that says "The student has been entered for a retake."
     // If percentage is less than 60 and allowedToRetake is false, return a String
-    else if (percentage < 60 && allowedToRetake == false) {
+    else if (percentage < 60 && !allowedToRetake) {
       return "The student is not allowed to retake this exam.";
     } 
     // that says "The student is not allowed to retake this exam."
@@ -51,7 +56,9 @@ public class GradingSystem {
     }
     // If percentage is 60 or higher, return a String that says "A retake is not
     // required."
-    return "";
+    else {
+      return "";
+    }
   }
 
 }
