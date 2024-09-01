@@ -17,9 +17,25 @@ public class Ticket {
     this.destination = destination;
   }
   
+  public void setPrice(double price) {
+    this.price = price;
+  }
 
+  public void setIsReturn(boolean isReturn) {
+    this.isReturn = isReturn;
+  }
 
   // Add a separate method to get the value of each field, called getDestination,
   // getPrice and getIsReturn.
 
+
+  public  String getDestination(){
+    return this.destination;
+  }
+  public double getPrice(){
+    return this.price;
+  }
+  public boolean getIsReturn(){
+    return this.isReturn;
+  }
 }
