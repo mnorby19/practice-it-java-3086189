@@ -13,6 +13,12 @@ public class Ticket {
   // Add three methods to set the value of each field, called setDestination,
   // setPrice and setIsReturn.
 
+  public void setDestination (String destination){
+    this.destination = destination;
+  }
+  
+
+
   // Add a separate method to get the value of each field, called getDestination,
   // getPrice and getIsReturn.
 
